@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Baro</class>
+ <widget class="QWidget" name="Baro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1454</width>
+    <height>937</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>50</y>
+     <width>221</width>
+     <height>431</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>951</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="2">
+       <widget class="QCustomPlot" name="Acc_Z_customPlot" native="true"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCustomPlot" name="Acc_X_customPlot" native="true"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QCustomPlot" name="Acc_Y_customPlot" native="true"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QCustomPlot" name="Baro_Alt_customPlot" native="true"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCustomPlot" name="Baro_Pres_customPlot" native="true"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QCustomPlot" name="Baro_Temp_customPlot" native="true"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustom./qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

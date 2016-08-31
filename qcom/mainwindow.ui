@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1300</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1300</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>FlyControl App By:Gao</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{background:rgb(229, 255, 239)}
+QStatusBar{background:url(:/images/header.bmp)}
+QPushButton{background:url(:/images/header.bmp)}
+QLCDNumber{background:url(:/images/lcd.bmp)}
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>16</width>
+    <height>16</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>480</y>
+      <width>188</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_28">
+       <property name="text">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;左后&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="M_3_progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="M_3_value"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>330</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_27">
+       <property name="text">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;右前&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="M_2_progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="M_2_value"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>330</y>
+      <width>191</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;左前&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="M_1_progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="M_1_value"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>480</y>
+      <width>196</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;右后&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QProgressBar" name="M_4_progressBar">
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="M_4_value"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>79</y>
+      <width>151</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;固件版本&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Version"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;机翼类型&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="multiType"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;输入电压&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="InputPower">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#0000ff;&quot;&gt;解锁或者是锁定中&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; color:#ff0000;&quot;&gt;实时电压&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="Bat"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>操作(&amp;C)</string>
+    </property>
+    <addaction name="actionSerialSet"/>
+    <addaction name="actionSensorData"/>
+    <addaction name="actionU30"/>
+    <addaction name="actionUA18"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于(&amp;A)</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>传感器</string>
+    </property>
+    <addaction name="actionGyro"/>
+    <addaction name="actionBaro"/>
+    <addaction name="actionMag"/>
+    <addaction name="actionBaro_Alt"/>
+   </widget>
+   <widget class="QMenu" name="menuGPS">
+    <property name="title">
+     <string>GPS</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>遥控器</string>
+    </property>
+    <addaction name="actionRC"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menuGPS"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSerialSet"/>
+   <addaction name="actionSensorData"/>
+   <addaction name="actionU30"/>
+   <addaction name="actionGyro"/>
+   <addaction name="actionBaro"/>
+   <addaction name="actionMag"/>
+   <addaction name="actionRC"/>
+   <addaction name="actionBaro_Alt"/>
+   <addaction name="actionUA18"/>
+  </widget>
+  <action name="actionAdd">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/add.png</normaloff>:/images/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加串口</string>
+   </property>
+   <property name="toolTip">
+    <string>添加串口设备文件</string>
+   </property>
+   <property name="statusTip">
+    <string>添加串口设备文件</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/open.png</normaloff>:/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开串口</string>
+   </property>
+   <property name="statusTip">
+    <string>打开串口</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/stop.png</normaloff>:/images/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭串口</string>
+   </property>
+   <property name="statusTip">
+    <string>关闭串口</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/exit.png</normaloff>:/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出程序</string>
+   </property>
+   <property name="statusTip">
+    <string>退出程序</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/mesage.png</normaloff>:/images/mesage.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于Wincom</string>
+   </property>
+   <property name="statusTip">
+    <string>关于Wincom</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存数据</string>
+   </property>
+   <property name="toolTip">
+    <string>保存收发框内的数据</string>
+   </property>
+   <property name="statusTip">
+    <string>保存收发框内的数据</string>
+   </property>
+  </action>
+  <action name="actionClearBytes">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/clearbytes.png</normaloff>:/images/clearbytes.png</iconset>
+   </property>
+   <property name="text">
+    <string>计数清零</string>
+   </property>
+   <property name="toolTip">
+    <string>清零已收到的字节数</string>
+   </property>
+   <property name="statusTip">
+    <string>清零已收到的字节数</string>
+   </property>
+  </action>
+  <action name="actionLoadfile">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/loadfile.png</normaloff>:/images/loadfile.png</iconset>
+   </property>
+   <property name="text">
+    <string>读取文件</string>
+   </property>
+   <property name="toolTip">
+    <string>载入外部文件作为发送内容</string>
+   </property>
+   <property name="statusTip">
+    <string>载入外部文件作为发送内容</string>
+   </property>
+  </action>
+  <action name="actionCleanPort">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/cleanport.png</normaloff>:/images/cleanport.png</iconset>
+   </property>
+   <property name="text">
+    <string>清空串口</string>
+   </property>
+   <property name="toolTip">
+    <string>清空串口中I/O数据</string>
+   </property>
+   <property name="statusTip">
+    <string>清空串口中I/O数据</string>
+   </property>
+  </action>
+  <action name="actionWriteToFile">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/write2file.png</normaloff>:/images/write2file.png</iconset>
+   </property>
+   <property name="text">
+    <string>写入文件</string>
+   </property>
+   <property name="toolTip">
+    <string>将读取数据写入到文件</string>
+   </property>
+   <property name="statusTip">
+    <string>将读取数据写入到文件</string>
+   </property>
+  </action>
+  <action name="actionPID">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/clearbytes.png</normaloff>:/images/clearbytes.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示PID</string>
+   </property>
+   <property name="toolTip">
+    <string>显示PID</string>
+   </property>
+  </action>
+  <action name="actionCurve">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/Curve1.png</normaloff>:/logo/Logo/Curve1.png</iconset>
+   </property>
+   <property name="text">
+    <string>波形</string>
+   </property>
+   <property name="toolTip">
+    <string>波形</string>
+   </property>
+  </action>
+  <action name="actionSensorData">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/Sensor1.png</normaloff>:/logo/Logo/Sensor1.png</iconset>
+   </property>
+   <property name="text">
+    <string>传感器数据</string>
+   </property>
+   <property name="toolTip">
+    <string>传感器数据</string>
+   </property>
+  </action>
+  <action name="actionGyro">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/Gyro2.png</normaloff>:/logo/Logo/Gyro2.png</iconset>
+   </property>
+   <property name="text">
+    <string>陀螺仪</string>
+   </property>
+  </action>
+  <action name="actionBaro">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/MS5611_2.png</normaloff>:/logo/Logo/MS5611_2.png</iconset>
+   </property>
+   <property name="text">
+    <string>气压计</string>
+   </property>
+  </action>
+  <action name="actionMag">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/HMC.png</normaloff>:/logo/Logo/HMC.png</iconset>
+   </property>
+   <property name="text">
+    <string>指南针</string>
+   </property>
+  </action>
+  <action name="actionU30">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/logo129-66.png</normaloff>:/images/logo129-66.png</iconset>
+   </property>
+   <property name="text">
+    <string>U30</string>
+   </property>
+  </action>
+  <action name="actionSerialSet">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/write2file.png</normaloff>:/images/write2file.png</iconset>
+   </property>
+   <property name="text">
+    <string>串口设置</string>
+   </property>
+  </action>
+  <action name="actionRC">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/GPS3.png</normaloff>:/logo/Logo/GPS3.png</iconset>
+   </property>
+   <property name="text">
+    <string>遥控器</string>
+   </property>
+  </action>
+  <action name="actionBaro_Alt">
+   <property name="icon">
+    <iconset resource="logo.qrc">
+     <normaloff>:/logo/Logo/GPS1.png</normaloff>:/logo/Logo/GPS1.png</iconset>
+   </property>
+   <property name="text">
+    <string>高度</string>
+   </property>
+  </action>
+  <action name="actionUA18">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/mesage.png</normaloff>:/images/mesage.png</iconset>
+   </property>
+   <property name="text">
+    <string>UA18</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+  <include location="logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>

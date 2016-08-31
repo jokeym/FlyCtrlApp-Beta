@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>Logo/GPS1.png</file>
+        <file>Logo/GPS2.png</file>
+        <file>Logo/GPS3.png</file>
+        <file>Logo/HMC.png</file>
+        <file>Logo/HMC2.png</file>
+        <file>Logo/Gyro2.png</file>
+        <file>Logo/MS5611_2.png</file>
+        <file>Logo/Curve1.png</file>
+        <file>Logo/Sensor1.png</file>
+    </qresource>
+</RCC>

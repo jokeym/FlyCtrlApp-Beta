@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShowWaveform</class>
+ <widget class="QWidget" name="ShowWaveform">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>956</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QCustomPlot" name="customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>341</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Acc_Y_customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>160</y>
+     <width>341</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Acc_Z_customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>330</y>
+     <width>341</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Gyro_X_customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>0</y>
+     <width>321</width>
+     <height>161</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Gyro_Y_customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>160</y>
+     <width>321</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="Gyro_Z_customPlot" native="true">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>330</y>
+     <width>321</width>
+     <height>191</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>0</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; color:#0000ff;&quot;&gt;传感器数据 ：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>50</y>
+     <width>251</width>
+     <height>461</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustom./qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
